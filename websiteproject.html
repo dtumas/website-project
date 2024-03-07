@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"/>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"/>
+    <!-- Google Font Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet Link -->
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <title> Time: to Grind</title>
+</head>
+
+  <!-- header -->
+    <div id="Header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.PNG" class="logo">
+                <div class="col">
+                    <h1>Time</h1> 
+                    <h2>to Grind</h2>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="websiteproject.html"><i class="fa-solid fa-house fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa-solid fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services"><i class="fa-solid fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>HTML/CSS Designer</p>
+                <h1>Hi, I'm <span>Duper</span><br>Thomas from Boston</h1>
+                <div class="about-col-2 row row-content align-items-right">
+        </div>
+    </div> 
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="images/hawk.jpg">
+            </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    for your project provide me with your IDEA! and I will create whatever you need
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><Span>HTML/CSS</Span><br>Designing Web page</li>
+                        <li><Span>HTML/CSS</Span><br>Deploy to web using firebase</li>
+                        <li><Span>HTML/CSS</Span><br>provide code from VS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><Span>NuCamp</Span><br>front & back end</li>
+                        <li><Span>Nucamp</Span><br>visual studio & bash file</li>
+                        <li><Span>Nucamp</Span><br>git-bash</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><Span>Education</Span><br>bootcamp</li>
+                        <li><Span>Education</Span><br>Web Fundamentals</li>
+                        <li><Span>Nucamp</Span><br>git-bash/Visual studio/firebase</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="serv-list">
+            <div>
+                <h2>Create Website</h2>
+                <p>deliver and optimize any web site. Ask and I will deliver your request</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>firebase Deploy</h2>
+                <p>get you website online ASAP! with firebase</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Visual studio Code</h2>
+                <p>All code provided. CSS/HTML/SCSS/SASS</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script> 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        For(tablink of tab-links){
+            tablink.classlist.remove("active-link");
+        }
+        For(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab"); 
+    }
+    event.currentTarget.classlist.add("active-links");
+    document.getElementById(tabnema).classList.add("active-tab");
+}
+</script>
+    <!--footer-->
+
+<div id="contact">
+    <div class="container">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p>thomasduper@gmail.com</p>
+        <p>617-980-2626</p>
+        <h5>Social</h5>
+        <div class="social-icons">
+    <a href="http://instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+    <a href="http://facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+    <a href="http://twitter.com/"><i class="fa-brands fa-twitter fa-xl"></i></a>
+    <a href="http://youtube.com/"><i class="fa-brands fa-youtube fa-xl"></i></a>
+        </div>
+        <div class="div contact-right">
+          <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" id="" cols="30" rows="6"></textarea>
+        <button type="submit" class="btn btn2">submit</button>
+    </form>   
+    </div>
+</footer>
+</html>
